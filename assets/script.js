@@ -1,4 +1,3 @@
-const requisicoes = new Requisicoes();
 const baseUrl = "http://localhost:3000";
 let listaDePaletas = [];
 
@@ -82,6 +81,7 @@ class Requisicoes {
     }
   }
 }
+const requisicoes = new Requisicoes();
 
 const imprimirTodasAsPaletas = async () => {
   const paletas = await requisicoes.buscarTodasAsPaletas();
@@ -293,3 +293,4 @@ const cadastrarNovaPaleta = async () => {
 
   esconderModalCriacao();
 };
+
